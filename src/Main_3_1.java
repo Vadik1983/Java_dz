@@ -33,10 +33,12 @@ public class Main_3_1 {
     public static int[] getRandom() {
         Random r = new Random();
         int[] array = new int[n];
-        for (int i = 0; i < n; i++) {
-            if (a < 0) {
-                array[i] = r.nextInt(b) - a;
-            } else{
+        if (a < 0) {
+            for (int i = 0; i < n; i++) {
+                array[i] = r.nextInt(b - a) + a;
+            }
+        }        else{
+            for (int i = 0; i < n; i++) {
                 array[i] = r.nextInt(b);
             }
         }
