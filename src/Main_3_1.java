@@ -17,7 +17,7 @@ public class Main_3_1 {
     public static void userInput() {
 
         try (Scanner scanner = new Scanner(System.in)) {
-            System.out.println("Введите число n:");
+            System.out.println("Введите количество элементов:");
             n = Integer.parseInt(scanner.nextLine());
             System.out.println("Введите минимальное значение:");
             a = Integer.parseInt(scanner.nextLine());
